@@ -100,6 +100,7 @@ if __name__ == '__main__':
 
         print(f'Extracted {counter:,} out of {N:,}.')
 
+# %%
 # Summarize xml files to one csv file
 from xml_to_csv import *
 

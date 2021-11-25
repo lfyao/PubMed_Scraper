@@ -40,7 +40,7 @@ def extract_abstract(pmid_list, extracted_list, save_file_name, retstart, pmid_c
 
     total = len(pmid_list)
 
-    print(f'Now extracing {total}.')
+    print(f'Now extracing {total:,}.')
 
     for counter, id in enumerate(pmid_list, 1):
         if counter % 10 == 0 or counter == total:

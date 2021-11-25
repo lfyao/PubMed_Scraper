@@ -10,14 +10,17 @@ from Bio.Entrez import efetch, read
 from bs4 import BeautifulSoup
 
 # %%
+main = True
 retstart = 0
 sort = "pub+date"
-duration = ('2016/01/01', '2021/09/30')
+duration = ('2016/01/01', '2021/10/31')
 # duration = ('2021/07/07', '2021/07/07')
 retmax = 1000
 query = 'case report'
 
 folder_name = f"pubmed (duration = {duration[0].replace('/', '-')} to {duration[1].replace('/', '-')}, query = '{query}')"
+if main:
+    folder_name = f"pubmed (duration = {duration[0].replace('/', '-')} to _, query = '{query}')"
 
 home_dir = Path("/home/is/leanfranzl-y/Python/")
 # home_dir = Path('/Users/leanfranzl-y/Documents/Python/')
